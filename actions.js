@@ -13,4 +13,4 @@ router.get('/greetin',(require,response) =>{
         message : 10*20
     })
 });
-module.exports = router;
+module.exports = router; 
