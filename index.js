@@ -15,11 +15,13 @@ app.use(bodyparser.json());
 
 //שלב 4 מייצרים את הראות עצמו
 //4.create the route
+//יבוא של קובץ
 const actionsroute=require('./actions');
 app.use('/api',actionsroute)
 
 //שלה 5 מיצרים שרת וירטואלי
 //5.create virtul server environment
+//בידקה אם השרת עובד
 const port = 5000;
 app.listen(port,function(){
 console.log(`server is working via port ${port}`);
